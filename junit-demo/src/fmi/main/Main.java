@@ -1,6 +1,6 @@
 package fmi.main;
 
-import fmi.MyMath;
+import fmi.math.MyMath;
 
 public class Main {
     public static void main(String[] args) {
