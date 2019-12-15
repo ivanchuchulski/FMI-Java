@@ -2,18 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cafb036-1be4-4873-a2ac-59c8ec6a84d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaPlayground/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaPlayground/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/junit-demo/META-INF/junit-demo.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fmi/MyMath.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fmi/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fmi/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fmi/math/MyMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fmi/math/MyMath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MyMathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/fmi/math/MyMathTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="83" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -39,6 +40,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -48,11 +50,13 @@
       <recent name="" />
       <recent name="fmi" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="fmi.math" />
+      <recent name="fmi" />
+      <recent name="fmi.main" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="fmi.math" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="fmi.main" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -92,11 +96,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyMathTest.sumTestOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyMathTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit-demo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyMathTest" />
-      <option name="METHOD_NAME" value="sumTestOne" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fmi.math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fmi.math" />
+      <option name="MAIN_CLASS_NAME" value="fmi.math.MyMathTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyMathTest.radiansToDegreesTestOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fmi.math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fmi.math" />
+      <option name="MAIN_CLASS_NAME" value="fmi.math.MyMathTest" />
+      <option name="METHOD_NAME" value="radiansToDegreesTestOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyMathTest.sqrtTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="junit-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fmi.math.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="fmi.math" />
+      <option name="MAIN_CLASS_NAME" value="fmi.math.MyMathTest" />
+      <option name="METHOD_NAME" value="sqrtTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -105,7 +146,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in junit-demo" />
-        <item itemvalue="JUnit.MyMathTest.sumTestOne" />
+        <item itemvalue="JUnit.MyMathTest" />
+        <item itemvalue="JUnit.MyMathTest.sqrtTest" />
+        <item itemvalue="JUnit.MyMathTest.radiansToDegreesTestOne" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -122,6 +165,8 @@
       <updated>1576342579873</updated>
       <workItem from="1576342581641" duration="4024000" />
       <workItem from="1576346760917" duration="96000" />
+      <workItem from="1576409129714" duration="141000" />
+      <workItem from="1576410979831" duration="4868000" />
     </task>
     <servers />
   </component>
@@ -133,10 +178,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/junit_demo$All_in_junit_demo.ic" NAME="All in junit-demo Coverage Results" MODIFIED="1576420699678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

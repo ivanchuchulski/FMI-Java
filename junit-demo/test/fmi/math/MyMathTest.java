@@ -1,5 +1,10 @@
+package fmi.math;
+
 import fmi.math.MyMath;
 import org.junit.jupiter.api.*;
+
+import java.security.spec.ECPoint;
+import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -17,23 +22,33 @@ class MyMathTest {
     }
 
     @Test
-    void sumTestOne() {
-        assertEquals(15.9 , MyMath.sum(5.3, 10.6), EPSILON);
+    @DisplayName("power raise timeout test")
+    void integerPowTest() {
+        assertTimeoutPreemptively(Duration.ofMillis(100), () -> { MyMath.integerPow(2.5, 4);});
     }
 
     @Test
-    void product() {
+    @DisplayName("sqrt a negative")
+    void sqrtTestOne() {
+        assertThrows(IllegalArgumentException.class, () -> {MyMath.sqrt(-256);});
     }
 
     @Test
-    void integerPow() {
+    @DisplayName("sqrt a positive")
+    void sqrtTestTwo() {
+        assertEquals(16, MyMath.sqrt(256), EPSILON);
     }
 
     @Test
-    void radiansToDegrees() {
+    void radiansToDegreesTestOne() {
+        assertEquals(180, MyMath.radiansToDegrees(MyMath.PI), EPSILON);
     }
 
     @Test
-    void degreesToRadians() {
+    void radiansToDegreesTestTwo() {
+        assertEquals(MyMath.PI, MyMath.degreesToRadians(180.0), EPSILON);
     }
+
+
+
 }

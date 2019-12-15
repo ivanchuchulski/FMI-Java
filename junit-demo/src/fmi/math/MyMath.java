@@ -19,27 +19,45 @@ public class MyMath {
         return value > 0 ? value : -value;
     }
 
-    public static double integerPow(double x, int n) {
-        if (n < 0) {
-            if (n == Integer.MIN_VALUE) {
-                n = -(n + 1);
-                return 1.0 / (integerPow(x*x, n));
+    public static double integerPow(double value, int power) {
+        if (power < 0) {
+            if (power == Integer.MIN_VALUE) {
+                power = -(power + 1);
+                return 1.0 / (integerPow(value*value, power));
             }
-            n = n*(-1);
-            return (double)1.0 / integerPow(x, n);
+            power = power*(-1);
+            return (double)1.0 / integerPow(value, power);
         }
         double y = 1;
-        while (n > 0) {
-            if (n % 2 == 0) {
-                x = x*x;
+        while (power > 0) {
+            if (power % 2 == 0) {
+                value = value*value;
             }
             else {
-                y = y*x;
-                x = x*x;
+                y = y*value;
+                value = value*value;
             }
-            n = n/2;
+            power = power/2;
         }
         return y;
+    }
+
+    public static double sqrt(double value) throws IllegalArgumentException {
+        if (value < 0) {
+            throw new IllegalArgumentException("sqrt of negative numbers not defined in reals");
+        }
+
+        if (value == 0) {
+            return 0;
+        }
+
+        double last = 0.0;
+        double result = 1.0;
+        while (result != last) {
+            last = result;
+            result = (result + value / result) / 2;
+        }
+        return result;
     }
 
     public static double radiansToDegrees(double radians) {
