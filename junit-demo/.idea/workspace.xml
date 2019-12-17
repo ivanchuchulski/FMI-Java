@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9cafb036-1be4-4873-a2ac-59c8ec6a84d5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fmi/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fmi/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fmi/math/MyMath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fmi/math/MyMath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/MyMathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/fmi/math/MyMathTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/fmi/math/MyMathTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/fmi/math/MyMathTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in junit-demo">
+  <component name="RunManager" selected="JUnit.MyMathTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="fmi.main.Main" />
       <module name="junit-demo" />
@@ -145,8 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in junit-demo" />
         <item itemvalue="JUnit.MyMathTest" />
+        <item itemvalue="JUnit.All in junit-demo" />
         <item itemvalue="JUnit.MyMathTest.sqrtTest" />
         <item itemvalue="JUnit.MyMathTest.radiansToDegreesTestOne" />
         <item itemvalue="Application.Main" />
@@ -167,6 +165,9 @@
       <workItem from="1576346760917" duration="96000" />
       <workItem from="1576409129714" duration="141000" />
       <workItem from="1576410979831" duration="4868000" />
+      <workItem from="1576489395619" duration="365000" />
+      <workItem from="1576492549306" duration="311000" />
+      <workItem from="1576578259615" duration="853000" />
     </task>
     <servers />
   </component>
@@ -188,5 +189,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/junit_demo$All_in_junit_demo.ic" NAME="All in junit-demo Coverage Results" MODIFIED="1576420699678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/junit_demo$MyMathTest.ic" NAME="MyMathTest Coverage Results" MODIFIED="1576492729843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>fmi.math.*</FILTER>
+    </SUITE>
   </component>
 </project>

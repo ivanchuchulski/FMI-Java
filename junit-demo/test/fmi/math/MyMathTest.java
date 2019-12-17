@@ -21,6 +21,7 @@ class MyMathTest {
         System.out.printf("tests ending%n");
     }
 
+    // using lambda to create Executable
     @Test
     @DisplayName("power raise timeout test")
     void integerPowTest() {
