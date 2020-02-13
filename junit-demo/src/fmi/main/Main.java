@@ -11,8 +11,6 @@ public class Main {
 
             System.out.printf("%f%n", MyMath.degreesToRadians(180));
 
-            System.out.printf("%f%n", MyMath.degreesToRadians(180));
-
             System.out.printf("%f%n", MyMath.integerPow(4.5, 2));
 
             System.out.printf("%f%n", MyMath.sqrt(-256));
