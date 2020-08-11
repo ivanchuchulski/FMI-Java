@@ -1,0 +1,15 @@
+javafx intellij idea configuration options
+
+--module-path ${PATH_TO_FX} --add-modules javafx.controls,javafx.fxml
+
+for modular projects
+https://openjfx.io/openjfx-docs/
+
+foreach module run the it's the class where it has the main(), bec intellij will automaticly create a config
+after that
+add 
+    --module-path ${PATH_TO_FX};mods\production"
+    ${PATH_TO_FX} is macro to javafx
+    to the vm options
+    
+add javafx lib folder to libraries
